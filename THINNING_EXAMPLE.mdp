@@ -1,0 +1,30 @@
+;The thinning protocol code was written and implemented by Niek van Hilten and Herre Jelger Risselada for GROMACS 2019.3.
+;When using this code, please cite:
+;-----------------
+;Van Hilten, N., Risselada, H.J, (2020). Membrane Thinning Induces Sorting of Lipids and the ALPS Peptide Curvature Sensor. (In preparation)
+;-----------------
+;
+;
+;
+;Please also read and cite the original GROMACS work:
+;-----------------
+;Abraham, M. J., Murtola, T., Schulz, R., Pall, S., Smith, J. C., Hess, B., et al. (2015).  
+;GROMACS: High performance molecular simulations through multi-level parallelism from laptops to supercomputers. Soft. X 1-2, 19–25
+;-----------------
+;
+;
+;This protocol can be used to induce thinning of lipid membranes in MD simulations. It should be called from the .mdp file, by adding the following parameters:
+
+user1-grps               = THINNING ; index group of tail and glycerol atom
+user2-grps               =
+userint1                 = 1  ; module will be switched on if not 0.
+userint2                 = 0
+userint3                 = 0
+userint4                 = 0
+userreal1                = 1 ; Minimal thickness of membrane in Z dimension in nm
+userreal2                = 20  ; force constant k
+userreal3                = 10.0  ; Length of the thin zone in nm
+userreal4                = 10.0  ; Length of the buffer zone in nm
+
+;Please note that it is required to define a index group "THINNING" which contains the atoms on which the inward directed force will act. 
+;For lipid membranes, we recommend defining the alkyl tail and glycerol atoms only.
