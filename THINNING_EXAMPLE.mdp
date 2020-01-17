@@ -1,5 +1,5 @@
 ;The thinning protocol code was written and implemented by Niek van Hilten and Herre Jelger Risselada for GROMACS 2019.3.
-;When using this code, please cite:
+;When using this example mdp file, please cite:
 ;-----------------
 ;Van Hilten, N., Risselada, H.J, (2020). Membrane Thinning Induces Sorting of Lipids and the ALPS Peptide Curvature Sensor. (In preparation)
 ;-----------------
