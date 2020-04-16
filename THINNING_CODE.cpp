@@ -2,7 +2,8 @@
 This code was written and implemented by Niek van Hilten and Herre Jelger Risselada for GROMACS 2019.3.
 When using this code, please cite:
 -----------------
-Van Hilten, N., Stroh, K.S. and Risselada, H.J., (2020). Membrane Thinning Induces Sorting of Lipids and the Amphipathic Lipid Packing Sensor (ALPS) Protein Motif. Front. Physiol. 11:250. doi:10.3389/fphys.2020.00250 -----------------
+Van Hilten, N., Stroh, K.S. and Risselada, H.J., (2020). Membrane Thinning Induces Sorting of Lipids and the Amphipathic Lipid Packing Sensor (ALPS) Protein Motif. Front. Physiol. 11:250. doi:10.3389/fphys.2020.00250
+-----------------
 
 
 
