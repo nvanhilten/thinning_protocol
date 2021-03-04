@@ -52,7 +52,7 @@ void do_thinning(tensor vir, rvec *x, rvec *f, int START, int HOMENR, t_commrec 
             /*thin zone, buffer zone, and normal zone*/
             if(lengthx <= xzone)
                 scale = 1.0;
-            else if(lengthx xzone + lshift)
+            else if(lengthx < xzone + lshift)
                 scale = ((xzone + lshift) - lengthx)/lshift;
             else 
                 scale=0;
